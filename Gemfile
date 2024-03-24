@@ -33,21 +33,26 @@ gem 'cloudinary', '~> 1.16.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-# For Seed File
+# For Seed file data
 gem 'faker'
 
 # Authentication
 gem 'devise'
 
-
 # Authorization
 gem 'pundit'
 
+# Use geocoder for geocoding
 gem 'geocoder'
 
+# LW Frontend Setup
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+
+# Fix mimemagic dependency
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
